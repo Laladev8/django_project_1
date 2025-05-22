@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All articles</title>
+</head>
+
+<body>
+<p>
+    <a href="{% url 'create_article' %}">New article</a>
+</p>
+<!-- for a duzende {% yazilir ,print edende {{ olur looplarda bu sekil ist edirik -->
+   {% for post in posts %}
+     <div>
+         <h3>{{post.title}}</h3>
+         <p>
+             {{post.description}}
+             <span>{{post.date}}</span>
+         </p>
+     </div>
+   {% endfor %}
+</body>
+</html>

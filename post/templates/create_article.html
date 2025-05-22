@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new article</title>
+</head>
+<body>
+<p>
+    <a href="{% url 'list_articles' %}">Back to List article</a>
+</p>
+<form method="POST">
+    <p>
+        <label>Title</label>
+        <input type="text" name="title">
+    </p>
+    <p>
+        <label>Description</label>
+        <input type="text" name="description">
+    </p>
+    <p>
+        <input type="submit" name="create">
+    </p>
+</form>
+</body>
+</html>
